@@ -1,0 +1,247 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  
+
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
+.container {
+  /* position:fixed; */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+background: linear-gradient(0deg, rgba(17, 17, 17, 0.85), rgba(17, 17, 17, 0.85));
+
+}
+.maintext {
+  
+width: 728px;
+height: 156px;
+left: 356px;
+top: 200px;
+font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-style: normal;
+font-weight: 900;
+font-size: 64px;
+line-height: 78px;
+text-align: center;
+color: #FEFEFE;
+}
+.secondtext {
+  /* position: absolute; */
+width: 622px;
+height: 52px;
+left: 409px;
+top: 396px;
+font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 52px;
+color: #FEFEFE;
+text-align: center;
+
+justify-content: center;
+}
+.inputForm {
+width: 430px;
+height: 50px;
+left: 443px;
+top: 528px;
+background: #FFFFFF;
+border-radius: 30px 0 0 30px;
+}
+.btn {
+  margin: 0;
+  padding: 0;
+/* display: flex; */
+/* flex-direction:initial; */
+/* align-items: center; */
+/* justify-content:center; */
+width: 121px;
+height: 50px;
+left: 877px;
+top: 528px;
+
+background: #4EA7F9;
+border-radius: 0px 30px 30px 0px;
+}
+.btnText {
+/* margin: 0; */
+/* width: 65px; */
+/* height: 22px; */
+/* left: 905px; */
+/* top: 542px; */
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+color: #FEFEFE;
+}
+
+.movieListContainer{
+  /* margin-top: ; */
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.movieItemContainer {
+margin-top: 25px;
+align-items: center;
+display: flex;
+width: 555px;
+height: 171px;
+left: 443px;
+top: 598px;
+cursor: pointer;
+
+background: #111111;
+opacity: 0.8;
+border-radius: 10px;
+}
+
+.imageItem {
+margin-left: 15px;
+width: 95px;
+height: 141px;
+left: 458px;
+top: 613px;
+border-radius: 8px;
+background: #fff;
+}
+.poster {
+width: 100%;
+height: 100%;
+border-radius: 8px;
+}
+
+.filmTitle {
+width: 255px;
+height: 29px;
+left: 573px;
+top: 628px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 29px;
+
+color: #FEFEFE;
+}
+.textItem {
+  margin-left: 20px
+}
+.filmType {
+width: 60px;
+height: 17px;
+left: 573px;
+top: 669px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+color: #FBFBFB;
+
+}
+.header {
+  /* position: absolute; */
+display: block;
+justify-content: space-between;
+width: 1440px;
+height: 100px;
+left: 0px;
+top: 0px;
+
+background: #111111;
+box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+}
+.posterBackground {
+  width: 1440px;
+height: 810px;
+left: 0px;
+top: 100px;
+}
