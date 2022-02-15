@@ -8,9 +8,9 @@ import YoutubeBackground from 'react-youtube-background'
     export default function MainPage({movies, inputText, setInputText, fetching  }) {
   return (
     <div>
-    <YoutubeBackground videoId='gA0nQyDZR4A' className='videoBack' style={{
-      position: 'absolute', 
-      width: '100%', 
+    <YoutubeBackground  videoId='gA0nQyDZR4A' className='videoBack' style={{
+      // position: 'relative', 
+      width: '100vw', 
       height: '100vh', 
       overflow: 'hidden', 
       zIndex: 1,

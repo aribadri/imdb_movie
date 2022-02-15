@@ -118,7 +118,7 @@ function MoviePage() {
               <div className="poster-raiting">{preview.rating}</div>
             </div>
 
-            <div className="poster-separate">{'|'}</div>
+            <div className="poster-separate"></div>
 
             <div className="poster-year">{preview.year}</div>
 

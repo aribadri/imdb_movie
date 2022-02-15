@@ -154,13 +154,13 @@ line-height: 22px;
 /* identical to box height */
 
 
-color: #CCCCCC;
+color: #312E2E;;
 }
 .btn {
 margin: 0;
 padding: 0;
 width: 121px;
-height: 50px;
+height: 52px;
 left: 877px;
 top: 528px;
 border:none;
@@ -183,9 +183,9 @@ color: #FEFEFE;
 .movieListContainer{
   border-radius: 8px;
   margin-top: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
   overflow-y: scroll;
-  height:500px;
+  height:250px;
 display:flex;
 flex-direction: column;
 align-items: center;
@@ -209,6 +209,9 @@ border-radius: 10px;
 }
 
 .imageItem {
+  margin-top: 15px;
+  margin-bottom: 15px;
+
 margin-left: 15px;
 width: 95px;
 height: 141px;
@@ -465,7 +468,7 @@ input::placeholder {
   position: absolute;
   width: 152px;
   height: 22px;
-  left: 68px;
+  left: 35px;
   top: 15px;
   text-align: center;
   font-family: "Montserrat";
@@ -503,6 +506,7 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 
 
 .film-description{
+  width: 100px;
   position: relative;
   color: white;
   left:150px;
@@ -510,7 +514,7 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 }
 .poster-film-name{
   width: 556px;
-  height: 176px;
+  /* height: 176px; */
   padding-bottom: 30px;
   
   font-family: "Montserrat";
