@@ -191,6 +191,9 @@ flex-direction: column;
 align-items: center;
 
 }
+.movieListContainer::-webkit-scrollbar {
+  width: 0;
+}
 .movieItemContainer {
 position: relative;
 margin-top: 20px;
@@ -533,22 +536,21 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
   align-items: center;
 }
 .conteiner-poster-raiting{
-  /* width: 87px; */
-  height: 30px;
-
-/* position: absolute; */
-display: flex;
-flex-direction: row;
-width: 87px;
-height: 30px;
-justify-content: center;
-align-items: center;
-right: 20px;
-top: 30px; 
-background: #FAC539;
-border-radius: 8px;
-z-index: 20;
-margin-right: 24px;
+      /* width: 87px; */
+      height: 30px;
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      width: 87px;
+      height: 30px;
+      justify-content: center;
+      align-items: center;
+      /* right: 20px; */
+      /* top: 30px; */
+      background: #FAC539;
+      border-radius: 8px;
+      z-index: 20;
+      margin-right: 24px;
 }
 
 .poster-db-movie{
@@ -586,21 +588,25 @@ flex-grow: 0;
   height: 30px;
 }
 .poster-year{
-height: 30px;
-width: 60px;
-font-family: "Montserrat";
-font-style: normal;
-font-weight: 600;
-font-size: 24px;
-line-height: 29px;
-color: #FBFBFB;
+  position: relative;
+  height: 30px;
+  width: 60px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FBFBFB;
+  left: 112px;
 }
 .poster-separate{
+  position: relative;
   width: 2px;
   height: 30px;
   margin-right: 24px;
-  border-left: 2px solid #FBFBFB;;
+  border-left: 2px solid #FBFBFB;
   height: 24px;
+  left: 112px;
 }
 .watch-btn{
 position: relative;
@@ -612,7 +618,7 @@ border-radius: 40px;
 display: flex;
 justify-content: center;
 align-items: center;
-margin-top: 196px;
+margin-top: 30px;
 }
 .watch-btn:hover{
   cursor: pointer;
