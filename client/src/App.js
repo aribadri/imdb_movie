@@ -38,7 +38,7 @@ async function fetching () {
       // <div>
     <Routes>
       <Route path="/" element={<MainPage movies={movies} inputText={inputText} setInputText={setInputText} setInputText={setInputText} fetching={fetching} />} />
-      <Route path="/movie/:id/" element={<MoviePage />} />
+      <Route path="/movie/:id/:param" element={<MoviePage />} />
     </Routes>
     //   </div>
     // </div>
